@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        color: white;
+      }
+
+      .container {
+        width: 100vw;
+        height: 80vh;
+        background-image: url(background.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .container > .navbar {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .container > .navbar > .logo {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        margin-top: 20px;
+        margin-left: 150px;
+      }
+      .container > .navbar > .nav-list {
+        width: 70%;
+        height: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+      }
+      .container > .navbar > .nav-list > a {
+        margin: 10px;
+        font-size: 19px;
+        text-decoration: none;
+      }
+      .container > .navbar > .nav-list > button {
+        width: 100px;
+        height: 30px;
+        margin-top: 8px;
+        margin-left: 15px;
+        color: black;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 20px;
+        border: none;
+        background: rgb(238, 174, 202);
+        background: radial-gradient(
+          circle,
+          rgba(238, 174, 202, 1) 0%,
+          rgba(148, 187, 233, 1) 79%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <h2>logo png</h2>
+        </div>
+        <div class="nav-list">
+          <a href="#">About</a>
+          <a href="#">Details</a>
+          <a href="#">Courses</a>
+          <a href="#">Blog</a>
+          <a href="#">contact</a>
+          <button>Log in</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
