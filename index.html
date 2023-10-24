@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div h1 {
+        color: green;
+      }
+      div.first-div > h2:first-of-type::selection {
+        margin-top: 4px;
+        margin-bottom: 5px;
+        color: red;
+        background-color: chartreuse;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="first-div">
+      <h2>this is second heading</h2>
+      <h2>this is second heading</h2>
+
+      <h1>this is first heading</h1>
+      <h1>this is first heading</h1>
+      <h1>this is first heading</h1>
+      <h1>this is first heading</h1>
+      <p class="first-para">this is first paragraph</p>
+      <p class="second-para">this is second paragraph</p>
+      <p>this is a sibling</p>
+      <div class="second-div">
+        <p>this is also a paragraph</p>
+      </div>
+    </div>
+  </body>
+</html>
